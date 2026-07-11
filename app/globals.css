@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  background-color: #faf6ff;
+  background-image:
+    radial-gradient(circle at 8% 8%, #f2ecfa 0%, transparent 45%),
+    radial-gradient(circle at 95% 12%, #fef3ba 0%, transparent 40%),
+    radial-gradient(circle at 50% 100%, #f2ecfa 0%, transparent 55%);
+  background-attachment: fixed;
+  color: #372a4d;
+}
+
+::selection {
+  background-color: #d3bcec;
+  color: #372a4d;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* Signature swirl divider used between the title and the menu grid */
+.swirl-divider {
+  height: 14px;
+  background-repeat: repeat-x;
+  background-size: 28px 14px;
+  background-image: radial-gradient(circle at 7px 14px, #bb96de 6px, transparent 7px),
+    radial-gradient(circle at 21px 0px, #fbd94f 6px, transparent 7px);
+  opacity: 0.8;
+}
